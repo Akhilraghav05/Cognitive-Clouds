@@ -1,0 +1,51 @@
+<div class="heading">
+  <img id="img-style" src="../../assets/logo.png">
+  <p class="alignment"> Assignment</p>
+</div>
+<mat-grid-list cols="3" *ngIf="show">
+  <mat-grid-tile *ngFor="let card of Cards" [colspan]="1" [rowspan]="1" rowHeight="2:1" (click)="images()">
+    <div class="iteration">
+      <mat-card class="example-card">
+        <img mat-card-image src="{{card.cardimageurl}}" width="50px" height="175px">
+        <span>{{card.overlay}}</span>
+        <mat-card-content>
+          <b>
+            {{card.matter}}
+          </b>
+          <br>
+          <br>
+          <small style="color: #6C6C6C;">35764 Sinn/ Fleshbach</small>
+        </mat-card-content>
+        <mat-card-footer>
+          <div class="currency">
+            <b>{{card.footer1| currency:'EUR':true|split:price}}</b>
+            <div class="right-side"> {{card.footer2}} |
+              {{card.footer3}}m<sup>2</sup>
+            </div>
+          </div>
+        </mat-card-footer>
+      </mat-card>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<div *ngIf="showDiv">
+  <img class="display" src="../../assets/unsplash.jpeg">
+  <p id="align-text">The state government was aggrieved with the directions of the NGT,
+    saying these were against the revised master plan of Bengaluru 2015,
+    which had got a statutory character. The state had said the directions
+    were against the Karnataka Industrial Area Development Act, Planning Act,
+    Karnataka Municipal Corporations Act, 1976, adding that the
+    buffer zone was already fixed as 30 metres. However,
+    the apex court said that a central legislation enacted
+    under Entry 13 of List I Schedule VII of the Constitution will have
+    the overriding effect over state legislations.
+    “The corollary is that the tribunal while providing for restoration
+    of environment in an area, can specify buffer zones around specific
+    lakes and water bodies, in contradiction with zoning regulations under
+    these statutes or the RMP (revised master plan).”
+
+  </p>
+  <p id="conclusion">Thanks for viewing the page....</p>
+  <button mat-raised-button color="primary" class="btn-class" (click)="goback()">Go Back</button>
+</div>

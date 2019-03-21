@@ -1,0 +1,77 @@
+.example-card {
+    max-width: 200px;
+    border: 2px solid black;
+  }
+  
+.iteration{
+    cursor: pointer;
+     margin-left:20px;
+   
+}
+.currency{
+  margin-left: 20px;
+  margin-bottom: 8px;
+  font-size: medium;
+}
+.right-side{
+  display: inline-block;
+  float: right;
+  color: #6C6C6C;
+  margin-right: 10px;
+  clear:both;
+  font-size: smaller;
+  margin-top: -1px;
+}
+
+span{
+  position: absolute;
+   left: 2%;
+  color:lightgray;
+  padding: 4px;
+  background-color: #fff;
+  font-weight: bold;
+  font-size: 11px;
+  top:13px;
+}
+#img-style{
+  width: 100px;
+  height: -81px;
+  margin-left: 30px;
+}
+.alignment{
+  text-align: center;
+  margin-top: -57px;
+font-size: -webkit-xxx-large;
+  color: lightgray;
+ 
+}
+p.alignment:hover{
+  color: black;
+  border-bottom: 2px solid black;
+
+}
+.display{
+  background: no-repeat center center fixed;
+  background-size: cover;
+  min-width: 100%;
+  height: auto;
+}
+#align-text{
+  position: relative;
+  top: 15px;
+  left: 15px;
+  bottom: 15px;
+  max-width: 650px;
+  
+  font-family: cursive;
+}
+#conclusion{
+  margin-top: 40px;
+ text-align: center;
+  font-size: larger;
+    font-style: oblique;
+    font-weight: 600;
+}
+.btn-class{
+  margin-left: 20px;
+}
